@@ -1,0 +1,90 @@
+.category {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+.category form {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 1rem;
+  width: 400px;
+  border: 1px solid black;
+  padding: 40px;
+  height: max-content;
+  border-radius: 5px;
+}
+
+.form-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 20px;
+}
+.category form input {
+  width: 100%;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid black;
+  outline: none;
+  text-align: center;
+}
+
+.category form button {
+  width: fit-content;
+  margin: 0 auto;
+  color: white;
+  background-color: orange;
+  padding: 8px;
+  border: 1px solid black;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.category form button:hover {
+  background: rgba(255, 166, 0, 0.712);
+}
+
+.all-cat {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  margin-top: 50px;
+  gap: 1rem;
+}
+.cat {
+  border: 1px solid black;
+  padding: 30px;
+  border-radius: 5px;
+  text-align: center;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+.delete-cat {
+  margin-right: 10px;
+}
+
+.delete-cat,
+.edit-cat {
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 1024px) {
+  .all-cat {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media screen and (max-width: 600px) {
+  .all-cat {
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 50px;
+    gap: 1rem;
+  }
+
+  .cat {
+    width: 150px;
+  }
+}
